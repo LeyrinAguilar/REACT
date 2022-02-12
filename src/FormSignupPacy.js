@@ -12,7 +12,7 @@ const FormSignup = ({ submitForm }) => {
   return (
     <div className="form-content-right">
       <form onSubmit={handleSubmit} className="form" noValidate>
-        <h1 className="tittle">REGISTRO DEL DOCTOR</h1>
+        <h1 className="tittle">REGISTRO DEL PACIENTE</h1>
         <div className="form-inputs">
           <label className="form-label">Nombre y apellidos</label>
           <input
@@ -25,20 +25,7 @@ const FormSignup = ({ submitForm }) => {
           />
           {errors.username && <p>{errors.username}</p>}
         </div>
-        <div className="form-inputs">
-          <label className="form-label">
-            Codigo de Colegio Médico del Perú
-          </label>
-          <input
-            className="form-input"
-            type="text"
-            name="codigo_cmp"
-            placeholder="Ingrese su CMP"
-            value={values.cmp}
-            onChange={handleChange}
-          />
-          {errors.cmp && <p>{errors.cmp}</p>}
-        </div>
+
         <div className="form-inputs">
           <label className="form-label">Email</label>
           <input

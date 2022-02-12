@@ -1,9 +1,10 @@
 import React from "react";
 import "./App.css";
-import Form from "./Form";
+import FormDoc from "./FormDoc";
+import FormPac from "./FormPac";
 
 function App() {
-  return <Form />;
+  return <FormPac />;
 }
 
 export default App;

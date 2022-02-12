@@ -1,0 +1,25 @@
+.form-input-btn {
+  width: 80%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background-color: #f08990;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-input-btn:hover {
+  cursor: pointer;
+  background-color: #8b73ff;
+  transition: all 0.4s ease-out;
+}
+.form-content-left {
+  background-color: #f6dfea;
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+.form h1 {
+  color: #f08990;
+}

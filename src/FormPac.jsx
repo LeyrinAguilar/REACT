@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import "./FormPaciente.css";
 import "./Form.css";
-import FormSignup from "./FormSignup";
+import FormSignup from "./FormSignupPacy";
 import FormSuccess from "./FormSuccess";
+import Imagen from "./img/img-3.svg";
 
-const Form = () => {
+const FormPac = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   function submitForm() {
@@ -13,7 +15,7 @@ const Form = () => {
     <>
       <div className="form-container">
         <div className="form-content-left">
-          <img className="form-img" src="img/img-2.svg" alt="spaceship" />
+          <img className="form-img" src={Imagen} alt="imagen doctora" />
         </div>
         {!isSubmitted ? (
           <FormSignup submitForm={submitForm} />
@@ -25,4 +27,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FormPac;

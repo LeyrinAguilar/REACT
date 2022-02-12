@@ -4,6 +4,11 @@ export default function validateInfo(values) {
   if (!values.username.trim()) {
     errors.username = "Nombres y apellidos es requerido";
   }
+  if (!values.cmp) {
+    errors.cmp = "C.M.P. es requerida";
+  } else if (values.cmp.length < 6) {
+    errors.cmp = "C.M.P. debe  tener 6 dígitos";
+  }
 
   if (!values.email) {
     errors.email = "Email es requerido";
